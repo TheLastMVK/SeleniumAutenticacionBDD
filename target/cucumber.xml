@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="24.862" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="Login User" name="login a user - #1.1" time="6.819">
+<system-out><![CDATA[
+Given page of autenticacion is all ready....................................passed
+When guest select MR services...............................................passed
+And user enters credentials "andres_v13@hotmail.com" and "Vuce0424."........passed
+Then user can see MR2 page..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Profile User" name="select a profile" time="15.702">
+<system-out><![CDATA[
+Given page of MR2 is all ready..............................................passed
+When user select option a profile...........................................passed
+Then user can see profile list..............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
