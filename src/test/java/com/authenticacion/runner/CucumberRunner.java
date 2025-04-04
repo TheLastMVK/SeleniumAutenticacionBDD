@@ -15,7 +15,7 @@ import io.cucumber.testng.CucumberOptions;
 		},
 		publish = true,		
 		monochrome = false,
-		//tags = "@scenario1",
+		tags = "@Logear_y_Cambiar_perfil",
 		dryRun = false
 		)
 

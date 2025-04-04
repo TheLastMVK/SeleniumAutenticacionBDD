@@ -4,7 +4,7 @@ Feature: Login User
   I want to login
   So that ...
 
-  @scenario1
+  @login
   Scenario Outline: login a user
     Given page of autenticacion is all ready
     When guest select MR services

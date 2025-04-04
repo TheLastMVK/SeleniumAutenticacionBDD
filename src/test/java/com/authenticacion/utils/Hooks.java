@@ -3,11 +3,13 @@ import java.time.Duration;
 
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.ie.InternetExplorerOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.safari.SafariOptions;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -24,28 +26,31 @@ public class Hooks extends Base {
 
 	@BeforeAll
 	public static void setUp() {
-		 
+		/*
 		ChromeOptions options = new ChromeOptions();
-        options.setBrowserVersion("113"); // Para asignar la versión del navegador: 115, 113, 116.0.5793.0, dev (modo development)
+        options.setBrowserVersion("63.0.3239.132"); // Para asignar la versión del navegador: 115, 113, 116.0.5793.0, dev (modo development)
         driver = new ChromeDriver(options);
-        
-       	/*
-        EdgeOptions options = new EdgeOptions();
-        options.setBrowserVersion("129"); // Para asignar la versión del navegador: 124, 122.0, 123 (beta), dev
-        driver = new EdgeDriver(options);        	
-		*/
+        */
 		
-		/* 
+		
+        EdgeOptions options = new EdgeOptions();
+        options.setBrowserVersion("120.1.1"); // Para asignar la versión del navegador: 124, 122.0, 123 (beta), dev
+        driver = new EdgeDriver(options);        	
+		
+		
+		/*
         FirefoxOptions options = new FirefoxOptions();
         options.setBrowserVersion("122"); // Para asignar la versión del navegador: 122.0, 121.0, 120, 119, 118, 117, dev, nightly, 125
 		driver = new FirefoxDriver(options);
 		*/
 		
-		/*	               
+		/*
         InternetExplorerOptions options = new InternetExplorerOptions();
         options.setBrowserVersion("11");
         driver = new InternetExplorerDriver(options);
-        */	
+      */
+        
+     
 		
 		/* 
         SafariOptions options = new SafariOptions();

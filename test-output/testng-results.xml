@@ -1,59 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-30T00:01:19 PET" name="Default suite" finished-at="2024-07-30T00:01:49 PET" duration-ms="30054">
+  <suite started-at="2025-04-04T17:52:09 PET" name="Default suite" finished-at="2025-04-04T17:52:43 PET" duration-ms="33767">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.authenticacion.runner.CucumberRunner@4d9ac0b4]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.authenticacion.runner.CucumberRunner@c5dc4a2]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-07-30T00:01:19 PET" name="Default test" finished-at="2024-07-30T00:01:49 PET" duration-ms="30054">
+    <test started-at="2025-04-04T17:52:09 PET" name="Default test" finished-at="2025-04-04T17:52:43 PET" duration-ms="33767">
       <class name="com.authenticacion.runner.CucumberRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.authenticacion.runner.CucumberRunner@4d9ac0b4]" started-at="2024-07-30T00:01:19 PET" name="setUpClass" finished-at="2024-07-30T00:01:22 PET" duration-ms="3160" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.authenticacion.runner.CucumberRunner@c5dc4a2]" started-at="2025-04-04T17:52:09 PET" name="setUpClass" finished-at="2025-04-04T17:52:13 PET" duration-ms="3660" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@61d42275]]>
+                <![CDATA[org.testng.TestRunner@22bfd4b]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.authenticacion.runner.CucumberRunner@4d9ac0b4]" started-at="2024-07-30T00:01:22 PET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-07-30T00:01:29 PET" duration-ms="6956" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.authenticacion.runner.CucumberRunner@c5dc4a2]" started-at="2025-04-04T17:52:13 PET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-04T17:52:40 PET" duration-ms="27041" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["login a user"]]>
+                <![CDATA["logear y cerrar sesion"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login User"]]>
+                <![CDATA["Logear y Cambiar perfil"]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#profileCircle"}
+  (Session info: MicrosoftEdge=135.0.3179.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25-ea'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [209eaa95e10bbc083ca43af6e6cad98d, findElement {value=profileCircle, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 135.0.3179.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60588}, msedge: {msedgedriverVersion: 135.0.3179.54 (c435295f8c13..., userDataDir: C:\Users\Admin\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60588/devtoo..., se:cdpVersion: 135.0.3179.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 209eaa95e10bbc083ca43af6e6cad98d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#profileCircle"}
+  (Session info: MicrosoftEdge=135.0.3179.54)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25-ea'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [209eaa95e10bbc083ca43af6e6cad98d, findElement {value=profileCircle, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 135.0.3179.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60588}, msedge: {msedgedriverVersion: 135.0.3179.54 (c435295f8c13..., userDataDir: C:\Users\Admin\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60588/devtoo..., se:cdpVersion: 135.0.3179.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 209eaa95e10bbc083ca43af6e6cad98d
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at com.authenticacion.pages.MercanciaPage.clicChangeProfile(MercanciaPage.java:20)
+at com.authenticacion.steps.StepsGeneralUser.user_select_option_a_profile(StepsGeneralUser.java:95)
+at ✽.user select option a profile(file:///C:/Workspace/SeleniumWebDriver/SeleniumAutenticacionBDD/src/test/resources/features/5-loginCambiaPerfil.feature:12)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.authenticacion.runner.CucumberRunner@4d9ac0b4]" started-at="2024-07-30T00:01:29 PET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-07-30T00:01:45 PET" duration-ms="15713" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["select a profile"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Profile User"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.authenticacion.runner.CucumberRunner@4d9ac0b4]" started-at="2024-07-30T00:01:45 PET" name="tearDownClass" finished-at="2024-07-30T00:01:49 PET" duration-ms="4158" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.authenticacion.runner.CucumberRunner@c5dc4a2]" started-at="2025-04-04T17:52:40 PET" name="tearDownClass" finished-at="2025-04-04T17:52:43 PET" duration-ms="3041" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
