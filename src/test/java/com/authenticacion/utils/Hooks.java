@@ -26,22 +26,23 @@ public class Hooks extends Base {
 
 	@BeforeAll
 	public static void setUp() {
+		
 		/*
 		ChromeOptions options = new ChromeOptions();
-        options.setBrowserVersion("63.0.3239.132"); // Para asignar la versión del navegador: 115, 113, 116.0.5793.0, dev (modo development)
+        options.setBrowserVersion("120.0.6099.129"); // Para asignar la versión del navegador: (121.0.6167.18) (120.0.6099.129) (63.0.3239.132)
         driver = new ChromeDriver(options);
-        */
-		
+        */	
+			
 		
         EdgeOptions options = new EdgeOptions();
-        options.setBrowserVersion("120.1.1"); // Para asignar la versión del navegador: 124, 122.0, 123 (beta), dev
+        options.setBrowserVersion("120"); //   88.0.705.50   , 120
         driver = new EdgeDriver(options);        	
 		
 		
 		/*
         FirefoxOptions options = new FirefoxOptions();
-        options.setBrowserVersion("122"); // Para asignar la versión del navegador: 122.0, 121.0, 120, 119, 118, 117, dev, nightly, 125
-		driver = new FirefoxDriver(options);
+        options.setBrowserVersion("Quantum"); // 58.0.1
+		driver = new FirefoxDriver(options);/*
 		*/
 		
 		/*

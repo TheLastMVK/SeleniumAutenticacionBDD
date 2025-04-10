@@ -15,7 +15,7 @@ import io.cucumber.testng.CucumberOptions;
 		},
 		publish = true,		
 		monochrome = false,
-		tags = "@Logear_y_Cambiar_perfil",
+		tags = "@Crear_Cuenta_Exta",
 		dryRun = false
 		)
 

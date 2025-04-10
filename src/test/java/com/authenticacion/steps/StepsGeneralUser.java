@@ -54,8 +54,10 @@ public class StepsGeneralUser extends Base{
 	}
 	
 	@And("user enters credentials {string} and {string}")
-	public void user_enters_credentials_and(String email, String password) {
+	public void user_enters_credentials_and(String email, String password) throws InterruptedException {
 		loginPage.closePopUp();
+		
+		Thread.sleep(2000);
 		loginPage.clicIngresar();
 		loginPage.fillOutForm(email, password);
 		loginPage.clicOnLogin();	
@@ -135,8 +137,10 @@ public class StepsGeneralUser extends Base{
 		
 	}	
 
-	@And("ingresa parametros nueva cuenta exta {string} and {string}")
-	public void ingresa_parametros_nueva_cuenta_exta(String usuario, String clave) throws InterruptedException {
+	
+	      
+	@And("ingresa parametros nueva cuenta exta {string} and {string} and {string}")
+	public void ingresa_parametros_nueva_cuenta_exta(String usuario, String clave, String dni) throws InterruptedException {
 		
 		Thread.sleep(10000);
 		registroPage.clicFuncionario();
@@ -152,11 +156,12 @@ public class StepsGeneralUser extends Base{
 		loginPage.closePopUp();
 		loginPage.clicCrearCuenta();
 		registroPage.clicFuncionario();
+		registroPage.registrarCuentaSunatExta(dni);;
 		
 	}
 		
-	@And("ingresa parametros nueva cuenta sunat {string} and {string} and {string} and {string}")
-	public void ingresa_parametros_nueva_cuenta_sunat(String ruc, String usuario, String contrasena, String dni) throws InterruptedException {
+	@And("ingresa parametros nueva cuenta sunat juridica {string} and {string} and {string} and {string}")
+	public void ingresa_parametros_nueva_cuenta_sunat_juridica(String ruc, String usuario, String contrasena, String dni) throws InterruptedException {
 		
 		Thread.sleep(10000);
 		registroPage.clicSunat();;
@@ -172,11 +177,35 @@ public class StepsGeneralUser extends Base{
 		loginPage.clicCrearCuenta();
 		registroPage.clicSunat2();
 		Thread.sleep(5000);
-		registroPage.logUserSunat(ruc, usuario, contrasena);	
-		registroPage.registrarCuentaSunat(dni);
-			
+		registroPage.logUserSunat(ruc, usuario, contrasena);		
+		registroPage.registrarCuentaSunatJuridica(dni);			
 		
 	}
+	
+	@And("ingresa parametros nueva cuenta sunat natural {string} and {string} and {string} and {string}")
+	public void ingresa_parametros_nueva_cuenta_sunat_natural(String ruc, String usuario, String contrasena, String dni) throws InterruptedException {
+		
+		Thread.sleep(10000);
+		registroPage.clicSunat();;
+		registroPage.logUserSunat(ruc, usuario, contrasena);
+		Thread.sleep(10000);
+		driver.close();
+		
+		registroPage.switchWindow();	
+		
+		autenticacionPage.selectOnMR();
+		autenticacionPage.switchWindow();	
+		loginPage.closePopUp();
+		loginPage.clicCrearCuenta();
+		registroPage.clicSunat2();
+		Thread.sleep(5000);
+		registroPage.logUserSunat(ruc, usuario, contrasena);		
+		registroPage.registrarCuentaSunatNatural(dni);			
+		
+	}
+	
+	
+	
 	
 	
 	@Then("se comprueba el envio de codigo")

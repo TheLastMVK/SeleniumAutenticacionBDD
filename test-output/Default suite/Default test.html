@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Apr 04 17:52:09 GMT-05:00 2025</td>
+<td>Started on:</td><td>Thu Apr 10 13:39:54 GMT-05:00 2025</td>
 </tr>
-<tr><td>Total time:</td><td>33 seconds (33767 ms)</td>
+<tr><td>Total time:</td><td>54 seconds (54200 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,62 +76,9 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.authenticacion.runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.authenticacion.runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "logear y cerrar sesion", "Logear y Cambiar perfil"</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#profileCircle&quot;}
-  (Session info: MicrosoftEdge=135.0.3179.54)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25-ea&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [209eaa95e10bbc083ca43af6e6cad98d, findElement {value=profileCircle, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 135.0.3179.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60588}, msedge: {msedgedriverVersion: 135.0.3179.54 (c435295f8c13..., userDataDir: C:\Users\Admin\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60588/devtoo..., se:cdpVersion: 135.0.3179.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 209eaa95e10bbc083ca43af6e6cad98d
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at com.authenticacion.pages.MercanciaPage.clicChangeProfile(MercanciaPage.java:20)
-	at com.authenticacion.steps.StepsGeneralUser.user_select_option_a_profile(StepsGeneralUser.java:95)
-	at ✽.user select option a profile(file:///C:/Workspace/SeleniumWebDriver/SeleniumAutenticacionBDD/src/test/resources/features/5-loginCambiaPerfil.feature:12)
-</pre></div><a href='#' onClick='toggleBox("stack-trace190490203", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace190490203'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#profileCircle&quot;}
-  (Session info: MicrosoftEdge=135.0.3179.54)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25-ea&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [209eaa95e10bbc083ca43af6e6cad98d, findElement {value=profileCircle, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 135.0.3179.54, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60588}, msedge: {msedgedriverVersion: 135.0.3179.54 (c435295f8c13..., userDataDir: C:\Users\Admin\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60588/devtoo..., se:cdpVersion: 135.0.3179.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 209eaa95e10bbc083ca43af6e6cad98d
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at com.authenticacion.pages.MercanciaPage.clicChangeProfile(MercanciaPage.java:20)
-	at com.authenticacion.steps.StepsGeneralUser.user_select_option_a_profile(StepsGeneralUser.java:95)
-	at ✽.user select option a profile(file:///C:/Workspace/SeleniumWebDriver/SeleniumAutenticacionBDD/src/test/resources/features/5-loginCambiaPerfil.feature:12)
-</pre></div></td>
-<td>27</td>
+<td title='com.authenticacion.runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.authenticacion.runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Crear_Cuenta", "Crear Cuenta Exta"</td>
+<td></td>
+<td>47</td>
 <td>com.authenticacion.runner.CucumberRunner@c5dc4a2</td></tr>
 </table><p>
 </body>
